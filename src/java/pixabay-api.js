@@ -1,4 +1,4 @@
-export const fetchImg = async (query) => {
+export const fetchImg = async query => {
   const API_KEY = '47265478-be2826baaa8c560815e28450a';
   const searchParams = new URLSearchParams({
     key: API_KEY,
@@ -7,7 +7,7 @@ export const fetchImg = async (query) => {
     orientation: 'horizontal',
     safesearch: true,
     per_page: 40,
-    page: 1
+    page: 1,
   });
   const url = `https://pixabay.com/api/?${searchParams}`;
 

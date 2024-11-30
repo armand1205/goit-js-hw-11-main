@@ -1,9 +1,9 @@
 export function createGallery(images) {
-    const gallery = document.querySelector('.gallery');
-    const markup = images
-      .map(
-        image =>
-          `<li class="gallery-item">
+  const gallery = document.querySelector('.gallery');
+  const markup = images
+    .map(
+      image =>
+        `<li class="gallery-item">
         <a class="gallery-link" href="${image.largeImageURL}">
           <img src="${image.webformatURL}"
           alt="${image.tags}"/>
@@ -27,12 +27,12 @@ export function createGallery(images) {
           </div>
           </div>
           </li>`
-      )
-      .join('');
-    gallery.innerHTML = markup;
-  }
-  
-  export function clearGallery() {
-    const gallery = document.querySelector('.gallery');
-    gallery.innerHTML = '';
-  }
+    )
+    .join('');
+  gallery.innerHTML = markup;
+}
+
+export function clearGallery() {
+  const gallery = document.querySelector('.gallery');
+  gallery.innerHTML = '';
+}
