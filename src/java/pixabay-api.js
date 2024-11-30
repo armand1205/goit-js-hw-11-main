@@ -1,5 +1,5 @@
 export const fetchImg = async query => {
-  const API_KEY = '47265478-be2826baaa8c560815e28450a';
+  const API_KEY = '47382150-e4fa89dff9896cf40fbc69b85';
   const searchParams = new URLSearchParams({
     key: API_KEY,
     q: query,
