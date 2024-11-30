@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2f179e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.photo-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 10px;
+  color: black;
+}
+
+.info-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.gallery .photo-card .info-item {
+  text-decoration: none;
+}
+
+.load-more {
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #2f179e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
